@@ -11,6 +11,22 @@
           "message": 7
         }
       ]
+    },
+    {
+      "owner": "elixir-warning",
+      "pattern": [
+        {
+          "regexp": "^((warning): (.*))$",
+          "message": 3,
+          "severity": 2
+        },
+        {
+          "regexp": "^(  )((.:)?[^:]*):(\\d+)(:(\\d+))?$",
+          "file": 2,
+          "line": 4,
+          "column": 6
+        }
+      ]
     }
   ]
 }
